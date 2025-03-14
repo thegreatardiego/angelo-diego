@@ -77,8 +77,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Email</h3>
-                <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  your.email@example.com
+                <a href="mailto:ardiego.2001@gmail.com" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                  ardiego.2001@gmail.com
                 </a>
               </div>
             </div>
@@ -89,8 +89,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Phone</h3>
-                <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  +1 (234) 567-890
+                <a href="tel:+639457747843" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                  +63 945 774 7843
                 </a>
               </div>
             </div>
@@ -102,12 +102,12 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-1">LinkedIn</h3>
                 <a 
-                  href="https://linkedin.com/in/yourusername" 
+                  href="https://linkedin.com/in/angelodiego" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
-                  linkedin.com/in/yourusername
+                  linkedin.com/in/angelodiego
                 </a>
               </div>
             </div>
@@ -119,7 +119,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-1">Location</h3>
                 <p className="text-muted-foreground">
-                  New York City, NY, USA
+                  Orion 2102, Bataan, Philippines
                 </p>
               </div>
             </div>

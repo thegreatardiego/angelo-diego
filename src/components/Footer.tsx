@@ -6,10 +6,10 @@ import DownloadButton from './ui/DownloadButton';
 const Footer = () => {
   // Social media links
   const socialLinks = [
-    { icon: Github, url: 'https://github.com/yourusername' },
-    { icon: Linkedin, url: 'https://linkedin.com/in/yourusername' },
-    { icon: Twitter, url: 'https://twitter.com/yourusername' },
-    { icon: Instagram, url: 'https://instagram.com/yourusername' },
+    { icon: Github, url: 'https://github.com/angelodiego' },
+    { icon: Linkedin, url: 'https://linkedin.com/in/angelodiego' },
+    { icon: Twitter, url: 'https://twitter.com/angelodiego' },
+    { icon: Instagram, url: 'https://instagram.com/angelodiego' },
   ];
 
   // Current year for copyright
@@ -21,14 +21,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Logo and about */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-2xl font-bold mb-4">Angelo Diego</h3>
             <p className="text-white/80 mb-6">
-              Creating beautiful digital experiences through thoughtful design and clean code.
+              Software developer specializing in mobile development and data analytics, creating functional digital experiences with clean code.
             </p>
             <DownloadButton
               label="Download CV"
-              fileName="your-cv.pdf"
-              fileUrl="/your-cv.pdf"
+              fileName="angelo-diego-cv.pdf"
+              fileUrl="/angelo-diego-cv.pdf"
               className="!bg-white !text-primary hover:!bg-white/90"
             />
           </div>
@@ -66,19 +66,19 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-white/80">
                 <span className="block">Email:</span>
-                <a href="mailto:your.email@example.com" className="hover:text-white transition-colors duration-300">
-                  your.email@example.com
+                <a href="mailto:ardiego.2001@gmail.com" className="hover:text-white transition-colors duration-300">
+                  ardiego.2001@gmail.com
                 </a>
               </li>
               <li className="text-white/80">
                 <span className="block">Phone:</span>
-                <a href="tel:+1234567890" className="hover:text-white transition-colors duration-300">
-                  +1 (234) 567-890
+                <a href="tel:+639457747843" className="hover:text-white transition-colors duration-300">
+                  +63 945 774 7843
                 </a>
               </li>
               <li className="text-white/80">
                 <span className="block">Location:</span>
-                <span>New York City, NY, USA</span>
+                <span>Orion 2102, Bataan, Philippines</span>
               </li>
             </ul>
           </div>
@@ -100,7 +100,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="text-white/60 text-sm">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Angelo Diego. All rights reserved.
           </p>
         </div>
       </div>

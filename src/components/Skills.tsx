@@ -6,7 +6,7 @@ import {
   Layers, 
   LineChart, 
   Smartphone, 
-  Server 
+  Shield 
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -23,39 +23,39 @@ const Skills = () => {
   const skills: Skill[] = [
     {
       icon: Code,
-      title: "Web Development",
-      description: "Building responsive and performant websites using modern frameworks and tools.",
+      title: "Software Development",
+      description: "Building responsive applications using modern frameworks and programming languages.",
       proficiency: 90,
-    },
-    {
-      icon: Paintbrush,
-      title: "UI/UX Design",
-      description: "Creating intuitive and visually appealing user interfaces with a focus on user experience.",
-      proficiency: 85,
-    },
-    {
-      icon: Layers,
-      title: "Frontend Development",
-      description: "Implementing interactive user interfaces with React, Vue, and other modern frameworks.",
-      proficiency: 92,
-    },
-    {
-      icon: Server,
-      title: "Backend Development",
-      description: "Building robust APIs and server-side applications with Node.js, Express, and databases.",
-      proficiency: 80,
     },
     {
       icon: Smartphone,
       title: "Mobile Development",
-      description: "Developing cross-platform mobile apps using React Native and Flutter.",
-      proficiency: 75,
+      description: "Creating Android applications using Android Studio with a focus on user experience.",
+      proficiency: 85,
+    },
+    {
+      icon: Paintbrush,
+      title: "Graphic Design",
+      description: "Designing engaging content and visuals using Adobe Photoshop and Canva.",
+      proficiency: 92,
     },
     {
       icon: LineChart,
-      title: "Data Visualization",
-      description: "Creating interactive charts and dashboards to represent complex data clearly.",
-      proficiency: 82,
+      title: "Data Analytics",
+      description: "Collecting, cleaning, and visualizing data to derive actionable insights using Google Looker.",
+      proficiency: 88,
+    },
+    {
+      icon: Shield,
+      title: "Cybersecurity",
+      description: "Implementing security measures and best practices for system protection.",
+      proficiency: 80,
+    },
+    {
+      icon: Layers,
+      title: "Office Applications",
+      description: "Microsoft Office 365 applications proficiency with MOS certifications.",
+      proficiency: 95,
     },
   ];
 
@@ -89,8 +89,8 @@ const Skills = () => {
           <span className="chip bg-primary/10 text-primary mb-4">What I Do</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Expertise</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I specialize in creating digital experiences that are both beautiful and functional.
-            Here are some of the skills I've mastered over the years.
+            I specialize in software development with a focus on mobile applications and data analytics.
+            Here are some of the skills I've developed through my education and experience.
           </p>
         </div>
 

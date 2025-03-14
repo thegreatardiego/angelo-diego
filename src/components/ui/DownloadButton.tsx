@@ -33,6 +33,7 @@ const DownloadButton: React.FC<DownloadButtonProps> = ({
         "flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-md font-medium transition-all duration-300 hover:shadow-lg btn-hover",
         className
       )}
+      title={`Download ${fileName}`}
     >
       {label} <Download className="h-4 w-4" />
     </button>

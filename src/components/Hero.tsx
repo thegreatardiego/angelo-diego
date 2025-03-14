@@ -51,13 +51,13 @@ const Hero = () => {
         </div>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <span className="block">Your Name</span>
-          <span className="text-muted-foreground block mt-2">Professional Title</span>
+          <span className="block">Angelo Diego</span>
+          <span className="text-muted-foreground block mt-2">Software Developer</span>
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          I'm a passionate designer and developer creating beautiful, functional digital experiences. 
-          I focus on clean aesthetics and thoughtful interactions to deliver exceptional results.
+          I'm a passionate software developer with a focus on mobile development and data analytics.
+          Based in Orion, Bataan, I specialize in creating functional digital experiences with clean code.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.8s' }}>

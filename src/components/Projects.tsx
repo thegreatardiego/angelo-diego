@@ -8,6 +8,8 @@ interface Project {
   description: string;
   image: string;
   tags: string[];
+  role?: string;
+  date?: string;
   liveUrl?: string;
   githubUrl?: string;
 }
@@ -18,36 +20,38 @@ const Projects = () => {
 
   const projects: Project[] = [
     {
-      title: "Modern Dashboard",
-      description: "A responsive admin dashboard with dark mode, charts, and data visualization features.",
+      title: "EyeHelp: Mobile App for Color Blind",
+      description: "A mobile application developed to assist color-blind individuals in identifying colors using Color Histogram Feature Extraction with the KNN Algorithm.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      tags: ["React", "Tailwind CSS", "Recharts"],
-      liveUrl: "#",
+      tags: ["Android Studio", "Mobile Development", "KNN Algorithm"],
+      role: "Project Leader & Mobile Developer",
+      date: "June 2024",
       githubUrl: "#",
     },
     {
-      title: "E-commerce Platform",
-      description: "A fully functional online store with product listings, cart, and checkout capabilities.",
+      title: "Data Management System",
+      description: "Developed systems for collecting, cleaning, and managing traditional and big data to ensure accuracy for the BPSU Data Management Office.",
       image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Next.js", "Stripe", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
+      tags: ["Data Analytics", "Visualization", "Database Management"],
+      role: "IT Specialist",
+      date: "July 2024 - February 2025",
     },
     {
-      title: "AI Content Generator",
-      description: "A web application that uses AI to generate various types of content for users.",
+      title: "Social Media Content Design",
+      description: "Designed engaging content for Instagram, Facebook, and X, including workout tips, client transformations, and promotional materials for Bach Performance.",
       image: "https://images.unsplash.com/photo-1677442135136-760c813dce5a?q=80&w=2070&auto=format&fit=crop",
-      tags: ["TypeScript", "OpenAI API", "Tailwind CSS"],
+      tags: ["Graphic Design", "Social Media", "Content Creation"],
+      role: "Freelance Graphic Designer",
+      date: "Feb 2021 - Feb 2022",
       liveUrl: "#",
-      githubUrl: "#",
     },
     {
-      title: "Financial Analytics App",
-      description: "A platform for tracking investments and visualizing financial data with interactive charts.",
+      title: "Interactive Dashboards",
+      description: "Created data visualization dashboards to present insights and analytics for the DMAO department, helping stakeholders make informed decisions.",
       image: "https://images.unsplash.com/photo-1642790106117-e5abcea9e0ad?q=80&w=2070&auto=format&fit=crop",
-      tags: ["React", "D3.js", "Firebase"],
-      liveUrl: "#",
-      githubUrl: "#",
+      tags: ["Google Looker", "Data Visualization", "Analytics"],
+      role: "IT Specialist",
+      date: "July 2024 - February 2025",
     },
   ];
 
@@ -81,8 +85,8 @@ const Projects = () => {
           <span className="chip bg-primary/10 text-primary mb-4">My Work</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore a selection of my recent work that showcases my skills and expertise.
-            Each project represents a unique challenge and solution.
+            Explore a selection of my professional and academic projects that showcase
+            my skills in software development, data analytics, and design.
           </p>
         </div>
 
@@ -133,7 +137,15 @@ const Projects = () => {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  {project.date && (
+                    <span className="text-sm text-muted-foreground">{project.date}</span>
+                  )}
+                </div>
+                {project.role && (
+                  <div className="text-sm text-primary font-medium mb-2">{project.role}</div>
+                )}
                 <p className="text-muted-foreground mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map(tag => (
