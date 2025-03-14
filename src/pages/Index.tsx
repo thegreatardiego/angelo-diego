@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
+import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -14,9 +15,7 @@ const Index = () => {
     const preloadImages = () => {
       const projectImages = [
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1677442135136-760c813dce5a?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1642790106117-e5abcea9e0ad?q=80&w=2070&auto=format&fit=crop"
+        "https://images.unsplash.com/photo-1677442135136-760c813dce5a?q=80&w=2070&auto=format&fit=crop"
       ];
       
       projectImages.forEach(src => {
@@ -58,6 +57,7 @@ const Index = () => {
         <Hero />
         <Skills />
         <Projects />
+        <Certifications />
         <Contact />
       </main>
       <Footer />

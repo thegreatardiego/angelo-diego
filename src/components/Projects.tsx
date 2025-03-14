@@ -29,14 +29,6 @@ const Projects = () => {
       githubUrl: "#",
     },
     {
-      title: "Data Management System",
-      description: "Developed systems for collecting, cleaning, and managing traditional and big data to ensure accuracy for the BPSU Data Management Office.",
-      image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Data Analytics", "Visualization", "Database Management"],
-      role: "IT Specialist",
-      date: "July 2024 - February 2025",
-    },
-    {
       title: "Social Media Content Design",
       description: "Designed engaging content for Instagram, Facebook, and X, including workout tips, client transformations, and promotional materials for Bach Performance.",
       image: "https://images.unsplash.com/photo-1677442135136-760c813dce5a?q=80&w=2070&auto=format&fit=crop",
@@ -44,14 +36,6 @@ const Projects = () => {
       role: "Freelance Graphic Designer",
       date: "Feb 2021 - Feb 2022",
       liveUrl: "#",
-    },
-    {
-      title: "Interactive Dashboards",
-      description: "Created data visualization dashboards to present insights and analytics for the DMAO department, helping stakeholders make informed decisions.",
-      image: "https://images.unsplash.com/photo-1642790106117-e5abcea9e0ad?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Google Looker", "Data Visualization", "Analytics"],
-      role: "IT Specialist",
-      date: "July 2024 - February 2025",
     },
   ];
 

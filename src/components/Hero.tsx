@@ -1,10 +1,18 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Hero = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [jobIndex, setJobIndex] = useState(0);
+  
+  const jobTitles = [
+    "Software Developer",
+    "Data Analyst",
+    "Graphic Designer",
+    "IT Specialist"
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -22,10 +30,16 @@ const Hero = () => {
       observer.observe(sectionRef.current);
     }
 
+    // Set up the job title rotation
+    const intervalId = setInterval(() => {
+      setJobIndex((prevIndex) => (prevIndex + 1) % jobTitles.length);
+    }, 2000);
+
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
       }
+      clearInterval(intervalId);
     };
   }, []);
 
@@ -52,7 +66,9 @@ const Hero = () => {
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <span className="block">Angelo Diego</span>
-          <span className="text-muted-foreground block mt-2">Software Developer</span>
+          <span className="text-muted-foreground block mt-2 h-12">
+            <span className="transition-opacity duration-300">{jobTitles[jobIndex]}</span>
+          </span>
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.6s' }}>
