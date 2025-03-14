@@ -1,12 +1,66 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 const Index = () => {
+  // Add intersection observer for sections
+  useEffect(() => {
+    // Preload images for better user experience
+    const preloadImages = () => {
+      const projectImages = [
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1677442135136-760c813dce5a?q=80&w=2070&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1642790106117-e5abcea9e0ad?q=80&w=2070&auto=format&fit=crop"
+      ];
+      
+      projectImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+    
+    preloadImages();
+    
+    // Initialize section animations
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+    
+    return () => {
+      sections.forEach(section => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background antialiased">
+      <Navbar />
+      <main>
+        <Hero />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
