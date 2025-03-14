@@ -6,10 +6,10 @@ import DownloadButton from './ui/DownloadButton';
 const Footer = () => {
   // Social media links
   const socialLinks = [
-    { icon: Github, url: 'https://github.com/angelodiego' },
-    { icon: Linkedin, url: 'https://linkedin.com/in/angelodiego' },
-    { icon: Twitter, url: 'https://twitter.com/angelodiego' },
-    { icon: Instagram, url: 'https://instagram.com/angelodiego' },
+    { icon: Github, url: 'https://github.com/thegreatardiego' },
+    { icon: Linkedin, url: 'https://www.linkedin.com/in/angelo-diego-963335165/' },
+    { icon: Twitter, url: 'https://x.com/thegreatardiego' },
+    { icon: Instagram, url: 'https://instagram.com/thegreatardiego' },
   ];
 
   // Current year for copyright

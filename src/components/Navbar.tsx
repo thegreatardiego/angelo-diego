@@ -55,7 +55,7 @@ const Navbar = () => {
           className="text-xl font-bold"
           onClick={(e) => handleNavClick(e, '#home')}
         >
-          <span className="text-primary">Portfolio</span>
+          <span className="text-primary">ARD</span>
         </a>
 
         {/* Desktop Navigation */}

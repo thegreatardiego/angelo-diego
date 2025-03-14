@@ -16,42 +16,47 @@ const Certifications = () => {
     {
       title: "ITS - Cybersecurity",
       issuer: "Certiport",
-      url: "https://certiport.pearsonvue.com/Certifications/IT-Specialist/Certification/Cybersecurity"
+      url: "https://drive.google.com/file/d/1SWlSZE2AIMSlhOf2M2qmMnziurCZQ_kf/view?usp=sharing"
     },
     {
       title: "Business Intelligence Foundation Professional Certification",
       issuer: "Certiprof",
-      url: "https://certiprof.com/pages/business-intelligence-foundation-professional-certificate-bifpc"
+      url: "https://drive.google.com/file/d/178RajC8UycVe8VJ-GwoIkez9Xgc5FQgt/view?usp=sharing"
     },
     {
       title: "Microsoft Office Specialist: Word Associate (365 Apps)",
       issuer: "Microsoft",
-      url: "https://learn.microsoft.com/en-us/certifications/microsoft-office-specialist-word-associate-365-apps/"
+      url: "https://drive.google.com/file/d/1GTB2zvWyNB_K5D7IYeu4TjBVGO06AnwK/view?usp=drive_link"
     },
     {
       title: "Microsoft Office Specialist: PowerPoint Associate (365 Apps)",
       issuer: "Microsoft",
-      url: "https://learn.microsoft.com/en-us/certifications/microsoft-office-specialist-powerpoint-associate-365-apps/"
+      url: "https://drive.google.com/file/d/1tt7qVLse98Q6HpkFxFo6FYK6ymevqV3H/view?usp=drive_link"
     },
     {
       title: "Microsoft Office Specialist: Excel Associate (365 Apps)",
       issuer: "Microsoft",
-      url: "https://learn.microsoft.com/en-us/certifications/microsoft-office-specialist-excel-associate-365-apps/"
+      url: "https://drive.google.com/file/d/1Kfyxmqr5PhN96nDNubJr0JQGxL5SuLnb/view?usp=sharing"
     },
     {
       title: "ITS – Network Security",
       issuer: "Certiport",
-      url: "https://certiport.pearsonvue.com/Certifications/IT-Specialist/Certification/Security"
+      url: "https://drive.google.com/file/d/1ugXhq2yCh7VC7UC_Jzh83WvWGTJZt-ZV/view?usp=drive_link"
     },
     {
       title: "Cisco Certified Support Technician - Cybersecurity",
       issuer: "Certiport",
-      url: "https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/ccst-cyber.html"
+      url: "https://drive.google.com/file/d/1InYs7bYr9oqKosfOA8ryLT-6LV-ef8iH/view?usp=drive_link"
     },
     {
       title: "Google AI Essentials",
       issuer: "Coursera",
-      url: "https://www.coursera.org/professional-certificates/google-ai-essentials"
+      url: "https://drive.google.com/file/d/1Si7K5dFa8OpTODN_WSAZGJoBl_Dr52by/view?usp=drive_link"
+    },
+    {
+      title: "Smart Technopreneurship 101",
+      issuer: "TESDA",
+      url: "https://drive.google.com/file/d/1S5T1EEI1tLUoD3DOejJ3Az2pknFm4rnO/view?usp=sharing"
     },
   ];
 

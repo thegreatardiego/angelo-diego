@@ -22,20 +22,20 @@ const Projects = () => {
     {
       title: "EyeHelp: Mobile App for Color Blind",
       description: "A mobile application developed to assist color-blind individuals in identifying colors using Color Histogram Feature Extraction with the KNN Algorithm.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=2067&auto=format&fit=crop",
       tags: ["Android Studio", "Mobile Development", "KNN Algorithm"],
       role: "Project Leader & Mobile Developer",
       date: "June 2024",
-      githubUrl: "#",
+      githubUrl: "https://github.com/thegreatardiego/EyeHelp",
     },
     {
       title: "Social Media Content Design",
       description: "Designed engaging content for Instagram, Facebook, and X, including workout tips, client transformations, and promotional materials for Bach Performance.",
-      image: "https://images.unsplash.com/photo-1677442135136-760c813dce5a?q=80&w=2070&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2074&auto=format&fit=crop",
       tags: ["Graphic Design", "Social Media", "Content Creation"],
       role: "Freelance Graphic Designer",
       date: "Feb 2021 - Feb 2022",
-      liveUrl: "#",
+      liveUrl: "https://drive.google.com/file/d/1hHUPMvARkadbxGXxfeO9ETOH4IAiHGCJ/view?usp=sharing",
     },
   ];
 
